@@ -36,7 +36,50 @@ public class Dialogos {
         String dato = JOptionPane.showInputDialog(new JFrame(), Pregunta, Titulo);
                 JOptionPane.showMessageDialog(null, dato);
                 return dato;
-                
-                    
-                }
-    }
+              }
+    
+    /**
+     * Metodo para pedir un dato de tipo String
+     * 
+     * @return dato introducido
+     */
+     public static String lerString(){
+     String dato;
+     dato = JOptionPane.showInputDialog("Introduce dato");
+     return dato;
+     }
+ 
+     /**
+      * Metodo para pedir un dato de tipo Integet
+      * 
+      * @return dato introducido 
+      */
+     public static int lerInt(){
+     int dato;
+     dato = Integer.parseInt(JOptionPane.showInputDialog("Introduce dato"));
+     return dato;
+     }
+     
+     /**
+      * Metodo para pedir un dato de tipo Float
+      * 
+      * @return dato introducido 
+      */
+     public static float lerFloat(){
+         float dato;
+         dato = Float.parseFloat(JOptionPane.showInputDialog("Introduce dato"));
+         return dato;
+     }
+     
+     /**
+      * Metodo para pedir un dato de tipo Double
+      * 
+      * @return dato introducido 
+      */
+     public static double lerDouble(){
+         double dato;
+         dato = Double.parseDouble(JOptionPane.showInputDialog("Introduce dato"));
+         return dato;
+     }
+ }
+    
