@@ -10,7 +10,9 @@ import java.util.Scanner;
  */
 public class Dialogos {
     Scanner sc = new Scanner(System.in);
-    
+    /**
+     * Metodo YESNO permite formular una pregunta con respuesta simple. Tanto la pregunta como las respuestas son modificables.
+     */
     public static void YESNO(){
     String Pregunta = JOptionPane.showInputDialog("Introduce la Pregunta");
     String Titulo = JOptionPane.showInputDialog("Introduce el Titulo");
@@ -23,4 +25,18 @@ public class Dialogos {
            JOptionPane.showMessageDialog(null, "Hasta la Próxima");
        }
     }
-}
+    /**
+     * Metodo Introducir Dato que permite pedir un dato. La pregunta es editable
+     * 
+     * @return dato introducido
+     */
+    public static String IntroducirDato(){
+        String Titulo = JOptionPane.showInputDialog("Introduce el titulo");
+        String Pregunta = JOptionPane.showInputDialog("Introduce la Pregunta");
+        String dato = JOptionPane.showInputDialog(new JFrame(), Pregunta, Titulo);
+                JOptionPane.showMessageDialog(null, dato);
+                return dato;
+                
+                    
+                }
+    }
